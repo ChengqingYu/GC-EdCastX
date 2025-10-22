@@ -135,4 +135,5 @@ class GCEdCastX(nn.Module):
             means_out = future_data[:,:,:,0].mean(1, keepdim=True)
             stdev_out = torch.sqrt(torch.var(future_data[:,:,:,0], dim=1, keepdim=True, unbiased=False) + 1e-5)
 
-        return x[:,:,target_num], means_input, stdev_out, means_out, stdev_out
+        return x[:,:,target_num], means_input, stdev_input, means_out, stdev_out
+
