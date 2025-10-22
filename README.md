@@ -22,3 +22,4 @@ The processed dataset needs to undergo relevant reviews before it can be made pu
 12. IF_node: Whether to use variable embedding
 13. IF_REVIN: Whether to use adaptive normalization
 
+This project is licensed under the MIT License - see the (https://github.com/GestaltCogTeam/GC-3DEddy/blob/main/LICENSE) file for details.
