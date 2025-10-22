@@ -39,7 +39,7 @@ class GCEdCastX(nn.Module):
         self.decoder = TVADE_block(self.inputlen, num_id, dropout, muti_head)
         self.output = nn.Conv1d(in_channels = self.inputlen, out_channels=out_len, kernel_size=1)
 
-        ### 可学习的标准化
+        ### Adaptive normalization
 
         self.mean_input = nn.Conv2d(in_channels = input_size, out_channels= 1, kernel_size=1, bias =False)
         self.mean_in4out = nn.Conv1d(in_channels = Input_len, out_channels= out_len, kernel_size=1, bias =False)
@@ -134,6 +134,5 @@ class GCEdCastX(nn.Module):
         else:
             means_out = future_data[:,:,:,0].mean(1, keepdim=True)
             stdev_out = torch.sqrt(torch.var(future_data[:,:,:,0], dim=1, keepdim=True, unbiased=False) + 1e-5)
-
 
         return x[:,:,target_num], means_input, stdev_out, means_out, stdev_out
