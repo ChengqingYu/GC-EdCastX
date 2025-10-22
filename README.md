@@ -6,7 +6,6 @@ The processed dataset needs to undergo relevant reviews before it can be made pu
 
 <img src="figure/GC-EdCastX.jpg" alt="model archtecture" style="zoom:80%;" />
 
-
 ## The hyperparameters of our model
 1. input_len: The length of historical observations 
 2. output_len: The length of future value
@@ -22,4 +21,5 @@ The processed dataset needs to undergo relevant reviews before it can be made pu
 12. IF_node: Whether to use variable embedding
 13. IF_REVIN: Whether to use adaptive normalization
 
-This project is licensed under the MIT License - see the (https://github.com/GestaltCogTeam/GC-3DEddy/blob/main/LICENSE) file for details.
+## License
+This project is licensed under the MIT License - see the (https://github.com/ChengqingYu/GC-EdCastX/blob/main/LICENSE) file for details.
