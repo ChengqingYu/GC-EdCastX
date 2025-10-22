@@ -1,6 +1,7 @@
 # Code for the proposed model: GC-EdCastX
 
 This model effectively integrates temporal features and background field information to achieve global mesoscale eddy forecasting.
+
 The processed dataset needs to undergo relevant reviews before it can be made publicly available. Currently, we mainly provide model files.
 
 <img src="figure/GC-EdCastX.jpg" alt="model archtecture" style="zoom:80%;" />
